@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  仿淘宝
+//
+//  Created by 华腾软科 on 17/2/17.
+//  Copyright © 2017年 华腾软科. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define Image(name) [UIImage imageNamed:name]
+
+#import "HomePageViewController.h"
+#import "MiniBuyViewController.h"
+#import "AnswerViewController.h"
+#import "ShoppingCartViewController.h"
+#import "MineViewController.h"
+
+
+#import <MGSwipeTableCell.h>
+#import <Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "Helper.h"
+#import "PPNumberButton.h"
+
+
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+/**
+ *  色彩板
+ */
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+#endif /* PrefixHeader_pch */

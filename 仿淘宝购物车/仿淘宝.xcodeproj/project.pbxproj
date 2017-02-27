@@ -17,6 +17,7 @@
 		3A05AD3C1E5BEA7700E40B89 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A05AD3B1E5BEA7700E40B89 /* BottomView.m */; };
 		3A05AD3F1E5C291900E40B89 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A05AD3E1E5C291900E40B89 /* Helper.m */; };
 		3A4E64C61E58253C00BB7166 /* CompileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E64C51E58253C00BB7166 /* CompileCell.m */; };
+		3A88A0DF1E5FD7320014CA5F /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A88A0DE1E5FD7320014CA5F /* image1.jpg */; };
 		3A8C7DDA1E56E8FB002DECA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C7DD91E56E8FB002DECA3 /* main.m */; };
 		3A8C7DDD1E56E8FB002DECA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C7DDC1E56E8FB002DECA3 /* AppDelegate.m */; };
 		3A8C7DE31E56E8FB002DECA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C7DE11E56E8FB002DECA3 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		3A05AD3E1E5C291900E40B89 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		3A4E64C41E58253C00BB7166 /* CompileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompileCell.h; sourceTree = "<group>"; };
 		3A4E64C51E58253C00BB7166 /* CompileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompileCell.m; sourceTree = "<group>"; };
+		3A88A0DE1E5FD7320014CA5F /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		3A8C7DD51E56E8FB002DECA3 /* 仿淘宝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仿淘宝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8C7DD91E56E8FB002DECA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A8C7DDB1E56E8FB002DECA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,13 +138,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A04AE321E56EC06009C0C51 /* 首页 */ = {
+		3A04AE321E56EC06009C0C51 /* 首页 - 仿淘宝首页 */ = {
 			isa = PBXGroup;
 			children = (
 				3A04AE371E56EC72009C0C51 /* HomePageViewController.h */,
 				3A04AE381E56EC72009C0C51 /* HomePageViewController.m */,
 			);
-			name = "首页";
+			name = "首页 - 仿淘宝首页";
 			sourceTree = "<group>";
 		};
 		3A04AE331E56EC08009C0C51 /* 微淘 */ = {
@@ -154,32 +156,32 @@
 			name = "微淘";
 			sourceTree = "<group>";
 		};
-		3A04AE341E56EC0B009C0C51 /* 问大家 */ = {
+		3A04AE341E56EC0B009C0C51 /* 问大家 - 下拉头部视图放大 */ = {
 			isa = PBXGroup;
 			children = (
 				3A04AE3D1E56ECB4009C0C51 /* AnswerViewController.h */,
 				3A04AE3E1E56ECB4009C0C51 /* AnswerViewController.m */,
 			);
-			name = "问大家";
+			name = "问大家 - 下拉头部视图放大";
 			sourceTree = "<group>";
 		};
-		3A04AE351E56EC0E009C0C51 /* 购物车 */ = {
+		3A04AE351E56EC0E009C0C51 /* 购物车 - 仿淘宝购物车 */ = {
 			isa = PBXGroup;
 			children = (
 				3A4E64C31E58239000BB7166 /* model */,
 				3A4E64C21E58238B00BB7166 /* cell */,
 				3A4E64C11E58238500BB7166 /* controller */,
 			);
-			name = "购物车";
+			name = "购物车 - 仿淘宝购物车";
 			sourceTree = "<group>";
 		};
-		3A04AE361E56EC47009C0C51 /* 我的淘宝 */ = {
+		3A04AE361E56EC47009C0C51 /* 我的淘宝 - 下拉导航栏渐变效果 */ = {
 			isa = PBXGroup;
 			children = (
 				3A04AE431E56ECDE009C0C51 /* MineViewController.h */,
 				3A04AE441E56ECDE009C0C51 /* MineViewController.m */,
 			);
-			name = "我的淘宝";
+			name = "我的淘宝 - 下拉导航栏渐变效果";
 			sourceTree = "<group>";
 		};
 		3A05AD391E5BEA2B00E40B89 /* BottomView */ = {
@@ -251,11 +253,11 @@
 				3A05AD391E5BEA2B00E40B89 /* BottomView */,
 				3AFDCA0C1E5AF0B200AD0A1E /* SectionHeadView */,
 				3AFDCA081E5AC36F00AD0A1E /* UILabel */,
-				3A04AE361E56EC47009C0C51 /* 我的淘宝 */,
-				3A04AE351E56EC0E009C0C51 /* 购物车 */,
-				3A04AE341E56EC0B009C0C51 /* 问大家 */,
+				3A04AE361E56EC47009C0C51 /* 我的淘宝 - 下拉导航栏渐变效果 */,
+				3A04AE351E56EC0E009C0C51 /* 购物车 - 仿淘宝购物车 */,
+				3A04AE341E56EC0B009C0C51 /* 问大家 - 下拉头部视图放大 */,
 				3A04AE331E56EC08009C0C51 /* 微淘 */,
-				3A04AE321E56EC06009C0C51 /* 首页 */,
+				3A04AE321E56EC06009C0C51 /* 首页 - 仿淘宝首页 */,
 				3A8C7E0E1E56EA5F002DECA3 /* BaseView */,
 				3A8C7E0B1E56E9E9002DECA3 /* MainViewController.h */,
 				3A8C7E0C1E56E9E9002DECA3 /* MainViewController.m */,
@@ -269,6 +271,7 @@
 		3A8C7DD81E56E8FB002DECA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A88A0DE1E5FD7320014CA5F /* image1.jpg */,
 				3A8C7DE11E56E8FB002DECA3 /* Main.storyboard */,
 				3A8C7DE41E56E8FB002DECA3 /* Assets.xcassets */,
 				3A8C7DE61E56E8FB002DECA3 /* LaunchScreen.storyboard */,
@@ -474,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A88A0DF1E5FD7320014CA5F /* image1.jpg in Resources */,
 				3A8C7DE81E56E8FB002DECA3 /* LaunchScreen.storyboard in Resources */,
 				3A8C7DE51E56E8FB002DECA3 /* Assets.xcassets in Resources */,
 				3A8C7DE31E56E8FB002DECA3 /* Main.storyboard in Resources */,
@@ -808,6 +812,7 @@
 				DEVELOPMENT_TEAM = 8NCEAQMY2L;
 				GCC_PREFIX_HEADER = "/Users/huatengruanke/Desktop/仿淘宝购物车/仿淘宝/PrefixHeader.pch";
 				INFOPLIST_FILE = "仿淘宝/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.htrk.rkoffice.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -822,6 +827,7 @@
 				DEVELOPMENT_TEAM = 8NCEAQMY2L;
 				GCC_PREFIX_HEADER = "/Users/huatengruanke/Desktop/仿淘宝购物车/仿淘宝/PrefixHeader.pch";
 				INFOPLIST_FILE = "仿淘宝/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.htrk.rkoffice.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";

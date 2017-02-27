@@ -183,12 +183,31 @@ static NSString *identifierID2 = @"cell2";
                 
                 [self postCenter];
 
-//                //一个section刷新
-                NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:indexPath.section];
-                [_CartTableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+
 
 //                [_CartTableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationAutomatic];
                 
+                NSMutableArray *arr = [[NSMutableArray alloc]initWithArray:_dataSource[indexPath.section]];
+                NSInteger index = 0; //判读section下的row是否全部勾选
+                for (NSInteger i = 0; i < arr.count; i++) {
+                    NSMutableDictionary *dict = [[NSMutableDictionary alloc]initWithDictionary:arr[i]];
+                    if ([dict[@"Type"] isEqualToString:@"1"]) {
+                        index ++;
+                    }
+                }
+                
+                //如果全部row的状态都为选中状态   则改变section的按钮状态
+                if (index == arr.count) {
+                    NSMutableDictionary *dict = [[NSMutableDictionary alloc]initWithDictionary:arr[0]];
+                    [dict setValue:@"1" forKey:@"CheckAll"];
+                    [arr replaceObjectAtIndex:0 withObject:dict];
+                }
+                
+                [_dataSource replaceObjectAtIndex:indexPath.section withObject:arr];
+                
+                //                //一个section刷新
+                NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:indexPath.section];
+                [_CartTableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
             }else{
                 [_dataSource removeObjectAtIndex:indexPath.section];
                 

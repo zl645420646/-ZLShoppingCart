@@ -91,13 +91,18 @@
 }
 -(void)setMoney:(NSMutableArray *)data
 {
+    int index1 = 0;
+    int index2 = 0;
+
     double goodsSum = 0.0;
     
     for (NSInteger i = 0; i < data.count; i ++) {
         NSArray *arr = data[i];
         for (NSInteger j = 0 ; j < arr.count; j ++) {
+            index1 ++;
             NSDictionary *goodsDict = arr[j];
             if ([goodsDict[@"Type"] isEqualToString:@"1"]) {
+                index2 ++;
                 double product;
                 double Price = [goodsDict[@"GoodsPrice"] doubleValue];
                 NSInteger goodsNum = [goodsDict[@"GoodsNumber"] integerValue];
@@ -112,7 +117,9 @@
     NSString *String  = [NSString stringWithFormat:@"合计: ￥%.2f",goodsSum];
     
     AllPrice.attributedText = [self String:String RangeString:[NSString stringWithFormat:@"￥%.2f",goodsSum]];
-    
+    if (index2 == index1 ) {
+        [SelectedAll setImage:Image(@"check_box_sel") forState:UIControlStateNormal];
+    }
 }
 
 //计算总价
